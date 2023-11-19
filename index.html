@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body">
+      <header>
+        <div class="top">
+          <img class="icon" src="/assets/images/logo.svg" />
+          <div class="nav_right">
+            <div class="nav_items">
+              <a class="nav_item">Home</a>
+              <a class="nav_item">New</a>
+              <a class="nav_item">Popular</a>
+              <a class="nav_item">Trending</a>
+              <a class="nav_item">Categories</a>
+            </div>
+            <div >
+              <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a>Home</a>
+              <a>New</a>
+              <a>Popular</a>
+              <a>Trending</a>
+              <a>Categories</a>
+              </div>
+              
+            <button class="toggle " class="openbtn" onclick="openNav()">
+              <img src="/assets/images/icon-menu.svg" />
+            </button>
+            
+          </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="frame">
+          <img class="puzzle" src="/assets/images/image-web-3-desktop.jpg" />
+        </div>
+        <div class="first">
+          <div class="topic">
+            <h1>
+              The Bright<br />
+              Future of Web<br />
+              3.0?
+            </h1>
+          </div>
+          <div class="article">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people.But is it
+              really fulfilling it's promise?
+            </p>
+            <button class="read_more">READ MORE</button>
+          </div>
+        </div>
+
+        <div class="second">
+          <div class="highlight">
+            <h2>New</h2>
+          </div>
+          <div class="cards">
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p class="info">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <hr />
+          </div>
+
+          <div class="cards">
+            <h3>The Downsides of AI Artistry</h3>
+            <p class="info">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+            <hr />
+          </div>
+
+          <div class="cards">
+            <h3>Is VC Funding Drying Up?</h3>
+            <p class="info">
+              Private funding be VC fiems is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="third">
+          <div class="slide">
+            <img class="photo" src="/assets/images/image-retro-pcs.jpg" />
+            <div class="extra">
+              <div class="space">
+                <h1 style="color: darkgray;">01</h1>
+                <h3>Reviving Retro PCs</h3>
+              </div>
+              <p class="sentence">What happens when old PCs are given morden upgrades?</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img class="photo" src="/assets/images/image-top-laptops.jpg" />
+            <div class="extra">
+              <div class="space">
+                <h1 style="color: darkgray;">02</h1>
+                <h3>Top 10 Laptops of 2022</h3>
+              </div>
+              <p class="sentence">Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img class="photo" src="/assets/images/image-gaming-growth.jpg" />
+            <div class="extra">
+              <div class="space">
+                <h1 style="color: darkgray;">03</h1>
+                <h3>The Growth of Gaming</h3>
+              </div>
+              <p class="sentence">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+      </script>
+  </body>
+</html>

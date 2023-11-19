@@ -1,0 +1,215 @@
+/* @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap"); */
+* {
+  box-sizing: border-box;
+}
+.body {
+  width: 90vw;
+  max-width: 1000px;
+  margin: 50px;
+}
+.icon {
+  width: 30px;
+  display: inline;
+}
+.top {
+  display: inline;
+}
+.nav_items {
+  display: none;
+}
+.nav_item {
+  padding: 10px;
+}
+.toggle {
+  display: inline;
+  background-color: transparent;
+  border: none;
+}
+.nav_right {
+  float: right;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 100%;
+}
+.frame {
+  margin-top: 20px;
+}
+.puzzle {
+  width: 300px;
+  height: 200px;
+}
+.article {
+  width: 300px;
+}
+.read_more {
+  padding: 10px;
+  background-color: rgba(255, 89, 0, 0.963);
+  color: white;
+  font-size: 8px;
+  letter-spacing: 1px;
+  border: none;
+  font-weight: bold;
+  width: 120px;
+}
+.topic {
+  line-height: 30px;
+}
+.second {
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  width: 300px;
+}
+.highlight {
+  color: rgb(255, 187, 0);
+  padding: 10px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.info {
+  color: rgba(219, 219, 243, 0.89);
+}
+.cards {
+  padding: 10px;
+}
+.third {
+  margin-top: 20px;
+  flex-direction: column;
+  width: 200px;
+}
+.slide {
+  position: relative;
+  height: 150px;
+}
+.photo {
+  width: 90px;
+}
+.extra {
+  position: relative;
+  left: 120px;
+  top: -120px;
+}
+.space {
+  line-height: 6px;
+}
+.sidepanel {
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgb(251, 248, 248);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #ea5638;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+@media (min-width: 1000px) {
+  .icon {
+    width: 60px;
+    margin-left: 60px;
+  }
+
+  .puzzle {
+    width: 720px;
+    height: 300px;
+  }
+  .nav_items {
+    display: flex;
+    justify-content: left;
+    margin-right: -120px;
+    font-size: larger;
+  }
+  .toggle {
+    display: none;
+  }
+  main {
+    flex-direction: row;
+    width: 120%;
+    position: relative;
+    padding: 30px;
+    left: 30px;
+  }
+  .first {
+    order: 2;
+    position: relative;
+    top: -150px;
+  }
+  .second {
+    order: 1;
+    margin-left: 20px;
+  }
+  .article {
+    position: absolute;
+    left: 320px;
+    top: 0;
+    line-height: 20px;
+  }
+  .read_more{
+    font-size: 11px;
+    width: 140px;
+  }
+  .topic {
+    font-size:large;
+    line-height: 40px;
+  }
+  .third {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: -160px;
+  }
+  .slide {
+    flex: 33%;
+    margin: 50px;
+    height: 100px;
+    width: 400px;
+  }
+  .space {
+    line-height: 20px;
+    margin: -15px;
+    width: 300px;
+  }
+  .extra {
+    position: relative;
+    left: 20;
+  }
+  .photo {
+    position: relative;
+    left: 0;
+  }
+  .sentence {
+    position: relative;
+    left: -13px;
+  }
+  .body {
+    width: 1000px;
+    margin: 0px;
+  }
+  header {
+    width: 100%;
+  }
+}
